@@ -1,0 +1,52 @@
+<doctype html>
+    <title>Edit Equipment - Python Flask MySQL CRUD</title>
+    <h2>Edit Equipment</h2>
+    
+
+    <form method="post" action="/update">
+    <dl>
+    <p>
+        <input name="name_equipment" value="{{ row['name_equipment'] }}" type="text" 
+        placeholder="Name" autocomplete="off" required>
+    </p>
+    <p>
+        <input name="type_equipment" value="{{ row['type_equipment'] }}" type="text" 
+        placeholder="Type" autocomplete="off" required>
+    </p>
+    <p>
+        <input name="make_country" value="{{ row['make_country'] }}" type="text"
+        placeholder="Make_in_country" autocomplete="off" required>
+    </p>
+<p>
+    <input name="price" value="{{ row['price'] }}" type="text"
+    placeholder="price" autocomplete="off" required>
+</p>
+<p>
+    <input name="purpose" value="{{ row['purpose'] }}" type="text"
+                placeholder="purpose" autocomplete="off" required>
+    </p>
+<p>
+        <input name="trainer_name" value="{{ row['trainer_name'] }}" type="text"
+                            placeholder="trainer_name" autocomplete="off" required>
+    
+</p>
+<p>
+        <input name="class_name" value="{{ row['class_name'] }}" type="text"
+                    placeholder="class_name" autocomplete="off" required>
+</p>
+<p>
+            <input name="room" value="{{ row['room'] }}" type="text"
+                        placeholder="room" autocomplete="off" required>
+    </p>
+    <p>
+            <input name="time_of_class"  value="{{ row['time_of_class'] }}" type="text"
+                            placeholder="time_of_class" autocomplete="off" required>
+    </p>
+    </dl>
+    <p>
+        <input name="id" value="{{ row['id'] }}" type="hidden">
+    <input type="submit" value="Submit">
+    </p>
+    </form>
+
+    

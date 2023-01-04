@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+	--primary-color: #b524c2;
+	--secondary-color: #636e72;
+	--font: 'Poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: rgba(255, 255, 255, 0.79);
+	font-size: 20px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+	font-size: medium;
+    
+}
+.btn:hover{
+	background: transparent;
+}
+
+body {
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+	text-shadow: 2px -1px 0  rgb(122, 4, 135) , -1px  2px 1px #768e97;
+}
+
+.logo::before{
+	content: "H4";
+	color: white;
+}
+.logo::after{
+	content: "U";
+	color: black;
+}
+
+
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+	
+}
+
+ul a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+	text-shadow: 1px -1px 0  rgb(0, 0, 0) ;
+
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+
+.banner{
+	background: url(img/ph.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 89vh;
+background-blend-mode: lighten;
+}
+
+.intro{
+	position: absolute;
+	top: 33%;
+	left: 33%;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px -1px 0  rgb(0, 0, 0) ;
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: medium;
+}
+
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+
+}
+
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+
+
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+.card{
+	width: 33.3%;
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card h2{
+	text-transform: uppercase;
+	height: 400px;
+	
+}
+
+.card label
+{
+	height: 999px;
+	color: rgb(177, 130, 253);
+	align-items: center;
+	
+}
+
+
+
+
+
