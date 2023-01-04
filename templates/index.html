@@ -1,115 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>H4U GYM WEBSITE</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="checkbox.css">
-	<script src="JavaS.js"></script>
-</head>
-<body>
-	<header>
-		<nav>
-			<h2 class="logo"></h2>  
-			
-			<ul>
-				
-				<a href="#"><li>Home</li></a>
-				<a href="classes.html"><li>Classes</li></a>
-				<a href="equipments.html"><li>Equipment Managment</li></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H4U GYM WEBSITE</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='style.css')}}"
+    />
+    <link rel="stylesheet" type="text/css" href="checkbox.css" />
+    <script src="JavaS.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2 class="logo"></h2>
 
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="classes.html"><li>Classes</li></a>
+          <a href="{{ url_for('.main_page') }}"><li>Equipment Managment</li></a>
+        </ul>
+      </nav>
+      <div class="banner">
+        <div class="intro">
+          <h2>Be Strong Fitness</h2>
+          <p>
+            Acoording to your purpose , you are going to choose the equipment
+            that suits you.
+          </p>
+          <ul>
+            <a href="mailto:202011230@gcet.edu.om"
+              ><button class="btn">Contact Us for FAQ</button></a
+            >
+          </ul>
+        </div>
+      </div>
+    </header>
 
-			</ul>
-			
-		</nav>
-		<div class="banner">
-			<div class="intro">
-				<h2>Be Strong Fitness</h2>
-				<p>Acoording to your purpose , you are going to choose the equipment that suits you.</p>
-				<ul>
-					<a href="mailto:202011230@gcet.edu.om"><button class="btn">Contact Us for FAQ</button></a>
-				
-			</ul>
-			</div>
-		</div>
-	</header>
-	
-	<div class="row">
-	
-		<div class="card"  style="color: white;background: var(--secondary-color);">
-			
-			<h2>Athletes</h2>
-			<label class="checkbox"  for="mycheckboxid" >	
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName" id="mycheckboxid">
-				<div class="checkbox__box"></div>
-				<p>
-				Track starting block set , it uses in sprint race to enable the fastest acceleration.
-				It made in USA and it coasts around 70$.
-				</p>
-	<p id="my"></p>
-			
-		
-			
-			</label>
-		
+    <div class="row">
+      <div
+        class="card"
+        style="color: white; background: var(--secondary-color)"
+      >
+        <h2>Athletes</h2>
+        <label class="checkbox" for="mycheckboxid">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName"
+            id="mycheckboxid"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            Track starting block set , it uses in sprint race to enable the
+            fastest acceleration. It made in USA and it coasts around 70$.
+          </p>
+          <p id="my"></p>
+        </label>
 
-			<label class="checkbox"  for="mycheckboxid1">
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName" id="mycheckboxid1">
-				<div class="checkbox__box"></div>
-				<p>
-				Stair climbers , it's for strengthen lower body, but also for building endurance.
-				It made in China and it coasts around 90$.
-			</p>
-			</label>
+        <label class="checkbox" for="mycheckboxid1">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName"
+            id="mycheckboxid1"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            Stair climbers , it's for strengthen lower body, but also for
+            building endurance. It made in China and it coasts around 90$.
+          </p>
+        </label>
+      </div>
+      <div class="card" style="background: white">
+        <h2 style="color: var(--primary-color)">Seniors</h2>
+        <label class="checkbox" for="mycheckboxid2">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName2"
+            id="mycheckboxid2"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            elliptical trainer , it's for full body workout. It made in china
+            and it coasts around 228$.
+          </p>
+        </label>
 
-			
-	
-		</div>
-		<div class="card" style="background: white;">
-			<h2 style="color: var(--primary-color);">Seniors</h2>
-			<label class="checkbox"  for="mycheckboxid2">
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName2" id="mycheckboxid2">
-				<div class="checkbox__box"></div>
-				<p>
-				elliptical trainer , it's for full body workout.
-				It made in china and it coasts around 228$.
-			</p>
-			</label>
+        <label class="checkbox" for="mycheckboxid3">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName2"
+            id="mycheckboxid3"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            Lat Pull Down Machine , it builds the muscles in your biceps and
+            middle back . It made in USA and it coasts around 300$.
+          </p>
+        </label>
+      </div>
 
-			<label class="checkbox"  for="mycheckboxid3">
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName2" id="mycheckboxid3">
-				<div class="checkbox__box"></div>
-				<p>
-				Lat Pull Down Machine , it builds the muscles in your biceps and middle back .
-				It made in USA and it coasts around 300$.
-			</p>
-			</label>
-		</div>
+      <div class="card" style="color: white; background: var(--primary-color)">
+        <h2>Weight loss</h2>
+        <label class="checkbox" for="mycheckboxid4">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName4"
+            id="mycheckboxid4"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            Rowing machine , it's a weight loss cardio machines. It made in
+            Canada and it coasts around 5000$.
+          </p>
+        </label>
 
-		<div class="card" style="color: white;background: var(--primary-color);">
-			<h2>Weight loss</h2>
-			<label class="checkbox"  for="mycheckboxid4">
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName4" id="mycheckboxid4">
-				<div class="checkbox__box"></div>
-				<p>
-				Rowing machine , it's a weight loss cardio machines.
-				It made in Canada and it coasts around 5000$.
-			</p>
-				
-			</label>
-
-			<label class="checkbox"  for="mycheckboxid5">
-				<input class="checkbox__input" type="checkbox"  name="myCheckboxName4" id="mycheckboxid5">
-				<div class="checkbox__box"></div>
-				<p>
-				Treadmill machine , it's a weight loss cardio machines.
-				It made in USA and it coasts around 9000$.
-			</p>
-			</label>
-			
-		</div>
-	</div>
-
-</body>
+        <label class="checkbox" for="mycheckboxid5">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName4"
+            id="mycheckboxid5"
+          />
+          <div class="checkbox__box"></div>
+          <p>
+            Treadmill machine , it's a weight loss cardio machines. It made in
+            USA and it coasts around 9000$.
+          </p>
+        </label>
+      </div>
+    </div>
+  </body>
 </html>

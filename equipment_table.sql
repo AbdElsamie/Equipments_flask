@@ -28,11 +28,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `equipment_table` (
-  `id` int(11) NOT NULL,
-  `Name_Equipment` varchar(100) NOT NULL,
-  `Type_Equipment` varchar(100) NOT NULL,
-  `Make_in_country` varchar(100) NOT NULL,
-  `price` int(11) NOT NULL
+`id` INT(11) NOT NULL AUTO_INCREMENT ,
+`name_equipment` VARCHAR(24) NOT NULL ,
+ `type_equipment` VARCHAR(24) NOT NULL ,
+  `make_country` VARCHAR(24) NOT NULL ,
+   `price` INT(11) NOT NULL ,
+    `purpose` VARCHAR(24) NOT NULL ,
+     `trainer_name` VARCHAR(24) NOT NULL ,
+      `class_name` VARCHAR(24) NOT NULL , 
+      `room` INT(11) NOT NULL , 
+      `time_of_class` VARCHAR(24) NOT NULL , 
+      PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
 
