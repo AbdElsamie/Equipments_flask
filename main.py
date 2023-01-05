@@ -14,6 +14,11 @@ def main():
     return render_template('equip.html')
 
 
+@app.route('/classes')
+def classes():
+    return render_template('classes.html')
+
+
 @app.route('/new_equipment')
 def add_Equipment_view():
     return render_template('add.html')
@@ -63,6 +68,7 @@ def main_page():
         cursor = conn.cursor(pymysql.cursors.DictCursor)
         cursor.execute("SELECT * FROM equipment_table")
         rows = cursor.fetchall()
+        rows = sorted(rows, key=lambda k: k['purpose'])
         table = Results(rows)
         table.border = True
         return render_template('equipments.html', table=table)
